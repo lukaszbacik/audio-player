@@ -1,0 +1,5 @@
+.sass-cache
+.idea
+web
+.DS_Store
+node_modules
