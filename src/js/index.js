@@ -6,18 +6,18 @@ let currentIndexTrack = 0;
 const playlist = [
   {
     name: "Armin van Buuren & Timmy Trumpet - Anita",
-    cover: "https://www.lukaszbacik.pl/images/audio-player/01.jpg",
-    url: "https://www.lukaszbacik.pl/images/audio-player/music/01.mp3",
+    cover: "https://media.githubusercontent.com/media/lukaszbacik/audio-player/master/src/images/01.jpg",
+    url: "https://media.githubusercontent.com/media/lukaszbacik/audio-player/master/src/music/01.mp3",
   },
   {
     name: "Tiësto & Karol G - Don't Be Shy",
-    cover: "https://www.lukaszbacik.pl/images/audio-player/02.jpg",
-    url: "https://www.lukaszbacik.pl/images/audio-player/music/02.mp3",
+    cover: "https://media.githubusercontent.com/media/lukaszbacik/audio-player/master/src/images/02.jpg",
+    url: "https://media.githubusercontent.com/media/lukaszbacik/audio-player/master/src/music/02.mp3",
   },
   {
     name: "Sorana & David Guetta - redruM",
-    cover: "https://www.lukaszbacik.pl/images/audio-player/03.jpg",
-    url: "https://www.lukaszbacik.pl/images/audio-player/music/03.mp3",
+    cover: "https://media.githubusercontent.com/media/lukaszbacik/audio-player/master/src/images/03.jpg",
+    url: "https://media.githubusercontent.com/media/lukaszbacik/audio-player/master/src/music/03.mp3",
   },
 ];
 ready(() => {
