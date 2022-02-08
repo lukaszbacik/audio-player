@@ -1,0 +1,77 @@
+// MANAGE INPUT RANGE
+
+@mixin shadow($shadow-size, $shadow-blur, $shadow-color) {
+  box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0 0 $shadow-size lighten($shadow-color, 5%);
+}
+
+@mixin track {
+  cursor: default;
+  height: $track-height;
+  transition: all 0.2s ease;
+  width: $track-width;
+}
+
+@mixin thumb {
+  @include shadow($thumb-shadow-size, $thumb-shadow-blur, $thumb-shadow-color);
+  background: $thumb-color;
+  border: $thumb-border-width solid $thumb-border-color;
+  border-radius: $thumb-radius;
+  box-sizing: border-box;
+  cursor: default;
+  height: $thumb-height;
+  width: $thumb-width;
+}
+input[type="range"] {
+  margin: auto;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  background-image: linear-gradient($baseColor, $baseColor);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  z-index: 3;
+  position: relative;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2));
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  box-shadow: none;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-track {
+  box-shadow: none;
+  background: transparent;
+}
+input[type="range"]::-webkit-range-track {
+  box-shadow: none;
+  background: transparent;
+}
+
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  border: 0;
+  background: $baseColor;
+  border-radius: 100%;
+  box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.1);
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border: 0;
+  background: $baseColor;
+  border-radius: 100%;
+  box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.1);
+}

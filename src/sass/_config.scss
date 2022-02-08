@@ -1,0 +1,97 @@
+//
+// Responsive Breakpoints
+// --------------------------------------------------
+
+$screen-xs: 480px;
+$screen-xsm: 600px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1740px;
+
+@mixin xs-min {
+  @media only screen and (min-width: $screen-xs) {
+    @content;
+  }
+}
+@mixin xs-max {
+  @media only screen and (max-width: $screen-xs - 1) {
+    @content;
+  }
+}
+
+@mixin xsm-min {
+  @media only screen and (min-width: $screen-xsm) {
+    @content;
+  }
+}
+@mixin xsm-max {
+  @media only screen and (max-width: $screen-xsm - 1) {
+    @content;
+  }
+}
+
+@mixin sm-min {
+  @media only screen and (min-width: $screen-sm) {
+    @content;
+  }
+}
+@mixin sm-max {
+  @media only screen and (max-width: $screen-sm - 1) {
+    @content;
+  }
+}
+
+@mixin md-min {
+  @media only screen and (min-width: $screen-md) {
+    @content;
+  }
+}
+@mixin md-max {
+  @media only screen and (max-width: $screen-md - 1) {
+    @content;
+  }
+}
+
+@mixin lg-min {
+  @media only screen and (min-width: $screen-lg) {
+    @content;
+  }
+}
+@mixin lg-max {
+  @media only screen and (max-width: $screen-lg - 1) {
+    @content;
+  }
+}
+
+@mixin xl-min {
+  @media only screen and (min-width: $screen-xl) {
+    @content;
+  }
+}
+@mixin xl-max {
+  @media only screen and (max-width: $screen-xl - 1) {
+    @content;
+  }
+}
+
+$baseColor: #01708d;
+$track-color: #000 !default;
+$thumb-color: #000 !default;
+
+$thumb-radius: 12px !default;
+$thumb-height: 20px !default;
+$thumb-width: 20px !default;
+$thumb-shadow-size: 0px !default;
+$thumb-shadow-blur: 0px !default;
+$thumb-shadow-color: rgba(0, 0, 0, 0.2) !default;
+$thumb-border-width: 0px !default;
+$thumb-border-color: #000 !default;
+
+$track-width: 100% !default;
+$track-height: 1px !default;
+$track-shadow-size: 0px !default;
+$track-shadow-blur: 0px !default;
+$track-shadow-color: rgba(0, 0, 0, 0.2) !default;
+$track-border-width: 0px !default;
+$track-border-color: #cfd8dc !default;
