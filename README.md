@@ -4,6 +4,10 @@
 
 Simple audio player
 
+## Demo
+
+Try it: https://codepen.io/lukaszbacik/pen/MWOJBem
+
 ## Config
 
 1. `nvm use` (Node v12, npm v8)
